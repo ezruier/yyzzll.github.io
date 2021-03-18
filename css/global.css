@@ -186,7 +186,7 @@
 }
 .backTop a {
   position: fixed;
-  right: 50px;
+  right: 5px;
   bottom: 50px;
   background-color: #eee;
   text-align: center;
@@ -202,7 +202,7 @@
 }
 .backPre a {
   position: fixed;
-  right: 50px;
+  right: 5px;
   bottom: 190px;
   background-color: #eee;
   text-align: center;
@@ -218,7 +218,7 @@
 }
 .backNext a {
   position: fixed;
-  right: 50px;
+  right: 5px;
   bottom: 120px;
   background-color: #eee;
   text-align: center;
