@@ -40,17 +40,15 @@
   </nav>
 </header>
         <main>
-          <section class="posts">
-  
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2021/03/22/js%E9%83%A8%E5%88%86-1/">
-          js部分---1
-        </a>
-      </div>
-      <div class="post-content">
-        
-              <h3 id="1-变量的类型"><a href="#1-变量的类型" class="headerlink" title="1. 变量的类型"></a>1. 变量的类型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#x2F;&#x2F; 五种基本数据类型 ： number ,  string , boolean ,</span><br><span class="line"></span><br><span class="line">					null , undefined </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; number  控制台输出的是蓝色</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; string  带引号  黑色</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; boolean  true &#x2F; false  蓝色</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; null 空对象</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; undefined 未定义的--- 没有赋值</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; typeof</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 复杂数据类型   array   object  </span><br></pre></td></tr></table></figure>
+          <article class="post">
+  <div class="post-title">
+    <h2 class="title">js部分---1</h2>
+  </div>
+   <div class="post-meta">
+    <span class="post-time">2021-03-22</span>
+  </div>
+  <div class="post-content">
+    <h3 id="1-变量的类型"><a href="#1-变量的类型" class="headerlink" title="1. 变量的类型"></a>1. 变量的类型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#x2F;&#x2F; 五种基本数据类型 ： number ,  string , boolean ,</span><br><span class="line"></span><br><span class="line">					null , undefined </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; number  控制台输出的是蓝色</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; string  带引号  黑色</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; boolean  true &#x2F; false  蓝色</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; null 空对象</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; undefined 未定义的--- 没有赋值</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; typeof</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 复杂数据类型   array   object  </span><br></pre></td></tr></table></figure>
 
 <h3 id="2-变量的优先级"><a href="#2-变量的优先级" class="headerlink" title="2.变量的优先级"></a>2.变量的优先级</h3><ol>
 <li>小括号 （）</li>
@@ -69,56 +67,8 @@
 <h3 id="5-数字的转化"><a href="#5-数字的转化" class="headerlink" title="5.数字的转化"></a>5.数字的转化</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">var fontSize &#x3D; &quot;24.5.4px12&quot; ;</span><br><span class="line"></span><br><span class="line">       var result &#x3D; Number(fontSize);</span><br><span class="line"></span><br><span class="line">       console.log(result);  &#x2F;&#x2F; NaN</span><br><span class="line"></span><br><span class="line">       &#x2F;&#x2F; parseInt 取第一个非数字之前的数字</span><br><span class="line">       result &#x3D; parseInt(fontSize);</span><br><span class="line">       console.log(result)</span><br><span class="line"></span><br><span class="line">       &#x2F;&#x2F; float 浮点数 -- 小数</span><br><span class="line">       var result2 &#x3D; parseFloat(fontSize);</span><br><span class="line">       console.log(result2)</span><br><span class="line"></span><br><span class="line">       &#x2F;&#x2F; 精度丢失  </span><br><span class="line">       console.log(0.1+0.7);</span><br><span class="line"></span><br><span class="line">       var num &#x3D; 0.1 + 0.2 ; </span><br><span class="line">       &#x2F;&#x2F; toFixed()  四舍五入的保留小数点  -- 结果是字符串</span><br><span class="line">       console.log(num.toFixed(2));</span><br><span class="line"></span><br><span class="line">       &#x2F;&#x2F; </span><br><span class="line">       var num2 &#x3D; 1.335 ;</span><br><span class="line">       console.log(num2.toFixed(2));</span><br></pre></td></tr></table></figure>
 
 
-                
-      </div>
-      <div class="post-meta">
-        <span class="post-time">
-          2021-03-22
-        </span>
-      </div>
-
-    </article>
-    
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2021/03/22/%E5%AF%B9html-css%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/">
-          对html,css的一些总结
-        </a>
-      </div>
-      <div class="post-content">
-        
-              <h3 id="HTML方面"><a href="#HTML方面" class="headerlink" title="HTML方面"></a>HTML方面</h3><h3 id="CSS方面"><a href="#CSS方面" class="headerlink" title="CSS方面"></a>CSS方面</h3>
-                
-      </div>
-      <div class="post-meta">
-        <span class="post-time">
-          2021-03-22
-        </span>
-      </div>
-
-    </article>
-    
-    <article class="post">
-      <div class="post-title">
-        <a class="post-title-link" href="/2021/03/13/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/">
-          你好世界
-        </a>
-      </div>
-      <div class="post-content">
-        
-          <h2 id="hexo自建主题"><a href="#hexo自建主题" class="headerlink" title="hexo自建主题"></a>hexo自建主题</h2>
-            
-      </div>
-      <div class="post-meta">
-        <span class="post-time">
-          2021-03-13
-        </span>
-      </div>
-
-    </article>
-    
-</section>
-
+  </div>
+</article>
         </main>
         <div class="backTop">
   <a href="#">
